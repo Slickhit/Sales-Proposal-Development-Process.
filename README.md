@@ -1,11 +1,11 @@
 # Sales Proposal Development Process
 
-This project provides a simple web application for creating customized sales proposals. It is built with [Express](https://expressjs.com/) and uses [EJS](https://ejs.co/) for templating.
+This project provides a simple web application for creating customized sales proposals. It is now built with [Flask](https://flask.palletsprojects.com/) and uses the Jinja2 templating engine.
 
 ## Features
 
 - Create proposals by entering a job description, cover letter and client name.
-- Server rendered views using EJS.
+- Server rendered views using Jinja2.
 - Configurable port via the `PORT` environment variable.
 
 ## Getting Started
@@ -19,22 +19,24 @@ Follow these steps to run the application locally from a clean environment:
    cd Sales-Proposal-Development-Process
    ```
 
-2. **Install dependencies**
+2. **Create a virtual environment and install dependencies**
 
    ```bash
-   npm install
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
    ```
 
 3. **Start the server**
 
    ```bash
-   npm start
+   python app.py
    ```
 
 By default the application runs on `http://localhost:3000`. You can override the port by setting the `PORT` environment variable:
 
 ```bash
-PORT=4000 npm start
+PORT=4000 python app.py
 ```
 
 ## \ud83d\ude80 Run in GitHub Codespaces
@@ -42,7 +44,7 @@ PORT=4000 npm start
 Click the green **[Code]** button and select **"Open with Codespaces"**. All dependencies will install automatically in the container. Once ready, start the app with:
 
 ```bash
-npm start
+python app.py
 ```
 
 ### GitHub Pages
@@ -54,7 +56,7 @@ In the repository settings, choose the `main` branch and `/docs` folder as the s
 
 ## Deployment
 
-This application can be deployed on any platform that supports Node.js. Ensure that the environment runs `npm install` during build and executes `npm start` to launch the server. The `PORT` variable should be set by the hosting provider.
+This application can be deployed on any platform that supports Python. Ensure that the environment installs dependencies from `requirements.txt` during build and executes `python app.py` (or your preferred WSGI server) to launch the server. The `PORT` variable should be set by the hosting provider.
 
 ## License
 
