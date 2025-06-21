@@ -1,0 +1,6 @@
+{
+  "name": "Sales Proposal Dev",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "npm install",
+  "features": {}
+}
