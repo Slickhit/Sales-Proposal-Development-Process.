@@ -10,19 +10,32 @@ This project provides a simple web application for creating customized sales pro
 
 ## Getting Started
 
-1. Install dependencies:
+Follow these steps to run the application locally from a clean environment:
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/<USER>/Sales-Proposal-Development-Process.git
+   cd Sales-Proposal-Development-Process
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the server**
+
+   ```bash
+   npm start
+   ```
+
+By default the application runs on `http://localhost:3000`. You can override the port by setting the `PORT` environment variable:
 
 ```bash
-npm install
+PORT=4000 npm start
 ```
-
-2. Start the server:
-
-```bash
-npm start
-```
-
-By default the application runs on `http://localhost:3000`. You can override the port by setting the `PORT` environment variable.
 
 ## Deployment
 
