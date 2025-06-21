@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create Proposal</title>
+</head>
+<body>
+    <h1>Create a Custom Proposal</h1>
+    <form action="/story" method="post">
+        <label for="client_name">Client Name:</label>
+        <input type="text" id="client_name" name="client_name" placeholder="Client name" />
+        <br/>
+        <label for="Job_description">Job Description:</label><br/>
+        <textarea id="Job_description" name="Job_description" rows="6" cols="60"></textarea>
+        <br/>
+        <label for="Cover_letter">Cover Letter:</label><br/>
+        <textarea id="Cover_letter" name="Cover_letter" rows="6" cols="60"></textarea>
+        <br/>
+        <button type="submit">Generate Proposal</button>
+    </form>
+</body>
+</html>
