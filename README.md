@@ -37,6 +37,21 @@ By default the application runs on `http://localhost:3000`. You can override the
 PORT=4000 npm start
 ```
 
+## \ud83d\ude80 Run in GitHub Codespaces
+
+Click the green **[Code]** button and select **"Open with Codespaces"**. All dependencies will install automatically in the container. Once ready, start the app with:
+
+```bash
+npm start
+```
+
+### GitHub Pages
+
+You can enable **GitHub Pages** from the `/docs` folder to host a static landing page.
+In the repository settings, choose the `main` branch and `/docs` folder as the source.
+
+
+
 ## Deployment
 
 This application can be deployed on any platform that supports Node.js. Ensure that the environment runs `npm install` during build and executes `npm start` to launch the server. The `PORT` variable should be set by the hosting provider.
